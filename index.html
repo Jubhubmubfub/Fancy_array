@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fancy Array</title>
+    <script type="text/javascript">
+      //Write a function when given an array, it logs the array values next to their index number like this: 0 --> "array value"
+      //allow the user to pass in the symbol used to separate the value with it's index
+      //if the user inputs true to param reversed, reverse the order of the order
+      function fancyArray(arr,symbol,reversed){
+        if (reversed === true){
+          for (var i = arr.length;i> -1;i--){
+            console.log(i + " " + symbol + " " + arr[i]);
+          }
+        } else {
+          for (var i = 0;i<arr.length;i++){
+            console.log(i + " " + symbol + " " + arr[i]);
+          }
+        }
+    }
+      fancyArray(["Marcus","Sakoda",1,true,undefined],"->");
+      console.log("---");
+      fancyArray(["Brad","Pitt",2,false],":: ");
+      console.log("---");
+      fancyArray(["Adrian","Brody",3],",");
+      console.log("---");
+      fancyArray(["Brandon","Stanton",4],"=> ");
+      console.log("---");
+      fancyArray(["Barack","Obama",5],"----");
+      console.log("---");
+      fancyArray(["Reverse","This",10,9],"=)",true);
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
